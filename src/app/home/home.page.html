@@ -1,0 +1,26 @@
+<ion-content [fullscreen]="true" class = "ion-padding">
+<ion-text>
+  <h1>BIENVENIDOS</h1>
+  <p>¿QUÉ TIPO DE USUARIO ERES?</p>
+</ion-text>
+<div class="actions">
+  <div class="users-buttons">
+    <ion-button color="light" shape = "round" size = "large" routerLink="/registro-admin2">
+      <ion-icon name="bonfire-outline"></ion-icon>
+      <ion-label>ADMINISTRADOR</ion-label>
+    </ion-button>
+    <ion-button color="dark" shape = "round" size = "large" routerLink="/registro-bibliotecario">
+      <ion-icon name="cafe-outline"></ion-icon>
+      <ion-label>BIBLIOTECARIO</ion-label>
+    </ion-button>
+  </div>
+  <div class="separator">
+    <span>or</span>
+    <span class ="line left"></span>
+    <span class = "line right"></span>
+  </div>
+  <ion-button expand="block" color="light" shape = "round" size = "large" routerLink="/registro-user"> 
+    <ion-icon name="pizza-outline"></ion-icon>
+    LECTOR </ion-button>
+</div>
+</ion-content>

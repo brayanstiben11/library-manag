@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar color = "primary"> 
+    <ion-button routerLink ="/menu-user" color ="dark">
+      <ion-icon  name="chevron-back-circle-outline"></ion-icon>
+    </ion-button>
+    <h1 style="text-align:center">PRESTAMOS SOLICITADOS</h1>
+  </ion-toolbar>
+</ion-header>
+<ion-content color ="dark">
+<ion-list size="10">
+  <ion-item  *ngFor="let prestamo of prestamos" color = "warning">
+  Codigo del prestamo: {{prestamo.codigoPrestamo}} <br>
+  Email: {{prestamo.emailEncargado}} <br>
+  Encargado: {{prestamo.encargado}} <br>
+  Titulo del libro: {{prestamo.tituloLibro}} <br>
+  Codigo ISBN:  {{prestamo.cisbn}} <br> 
+  </ion-item>
+</ion-list>
+</ion-content>

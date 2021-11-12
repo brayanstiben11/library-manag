@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar color = "warning"> 
+    <h1 style="text-align:center">LIBROS DISPONIBLES</h1>
+  </ion-toolbar>
+</ion-header>
+<ion-content color ="dark">
+<ion-list size="10">
+  <ion-item  *ngFor="let libro of libros" (click)="onClick(libro.cisbn)" color = "danger">
+  Titulo: {{libro.titulo}} <br>
+  Editorial: {{libro.editorial}} <br>
+  Autor: {{libro.autor}} <br>
+  Codigo ISBN: {{libro.cisbn}} <br>
+  Cantidad Disponible:  {{libro.cantidad}} <br> 
+  Tipo de Libro: {{libro.tipo}} <br>
+  </ion-item>
+</ion-list>
+</ion-content>

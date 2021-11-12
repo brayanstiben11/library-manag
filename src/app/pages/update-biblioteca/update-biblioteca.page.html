@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Configuración de la biblioteca <img class=icon2 src="https://2.bp.blogspot.com/-T4roEieIzkA/WN4NzP2qEwI/AAAAAAAAAJY/L_LuqzcNGoE4Jhq7FHxnGUzmqpM3JvaygCLcB/s1600/plainicon.com-52688-256px-f58.gif">
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+<img class=icon src="assets/icon/LibraryManager.jpeg" alt="center">
+<form (ngSubmit)="onSubmit(t.value)" #t="ngForm">
+
+  <ion-list>
+    <ion-item color="primary">
+      <ion-label stacked>Nombre de la bilioteca</ion-label>
+      <ion-input type="text" expand="full" ngModel name="nombre"></ion-input>
+    </ion-item>
+
+    <ion-item color="primary">
+      <ion-label stacked>Cantidad de libros a prestar</ion-label>
+      <ion-input type="text" expand="full" ngModel name="numeroMaximoLibros"></ion-input>
+    </ion-item>
+
+    <ion-item color="primary">
+      <ion-label stacked>Hora de apertura</ion-label>
+      <ion-input type="text" expand="full" ngModel name="horaapertura"></ion-input>
+    </ion-item>
+
+    <ion-item color="primary">
+      <ion-label stacked>Hora de cierre</ion-label>
+      <ion-input type="text" expand="full" ngModel name="horacierre"></ion-input>
+    </ion-item>
+
+    <ion-item color="primary">
+      <ion-label stacked>Página web de la biblioteca</ion-label>
+      <ion-input type="text" expand="full" ngModel name="paginaweb"></ion-input>
+    </ion-item>
+
+    <ion-button expand="full" size="large" color="success" type="submit" routerLink="/menuadmin">
+      Guardar configuración
+    </ion-button>
+
+  </ion-list>
+
+</form>
+<h4 style="text-align:center">LibraryManager 2020</h4>
+
+</ion-content>
