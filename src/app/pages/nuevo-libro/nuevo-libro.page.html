@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title style="text-align:center">REGISTRAR NUEVO LIBRO</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="onSubmit(asd.value)" #asd="ngForm">
+
+    <ion-list>
+      <ion-item>
+        <ion-label stacked>Titulo</ion-label>
+        <ion-input type="text" expand="full" ngModel name="titulo" ></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label stacked>Editorial</ion-label>
+        <ion-input type="text" expand="full" ngModel name="editorial" ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>Autor</ion-label>
+        <ion-input type="text" expand="full" ngModel name="autor" ></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label stacked>Codigo ISBN</ion-label>
+        <ion-input  type="text" ngModel name="cisbn" ></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label stacked>Cantidad</ion-label>
+        <ion-input  type="number" ngModel name="cantidad" ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>Tipo de libro</ion-label>
+        <ion-input  type="text" ngModel name="tipo" ></ion-input>
+      </ion-item>
+
+      <ion-button expand="full" size="large" color="success" type="submit" routerLink ="/menu-bibliotecario">
+        ¡CREAR NUEVO LIBRO!
+      </ion-button>
+    
+    </ion-list>
+
+</form>
+
+</ion-content>

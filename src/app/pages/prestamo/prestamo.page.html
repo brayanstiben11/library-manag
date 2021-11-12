@@ -1,0 +1,31 @@
+
+<ion-header>
+  <ion-toolbar color="warning">
+    <h2 style="text-align:center">
+      SOLICITA TU LIBRO
+    </h2>
+  </ion-toolbar>
+</ion-header>
+<ion-content color="dark">
+  <h1 style="text-align:center">PARA SOLICITAR UN LIBRO:</h1>
+  <p>DEBES INGRESAR EL CODIGO ISBN Y TU EMAIL</p>
+  <div class="formulario">
+  <form (ngSubmit)="on1Submit(asd.value)" #asd="ngForm">
+
+    <ion-list >
+      <ion-item color="success">
+        <ion-label position ="floating" stacked>Codigo ISBN del libro</ion-label>
+        <ion-input type="text" expand="full" ngModel name="cisbn" ></ion-input>
+      </ion-item>
+      
+      <ion-item color="success">
+        <ion-label position ="floating" stacked>Correo Electronico de Registro</ion-label>
+        <ion-input type="text" expand="full" ngModel name="email" ></ion-input>
+      </ion-item>
+      <ion-button expand="full" size="large" routerLink="/menu-user" color="success" type="submit" >
+        SOLICITAR PRESTAMO
+      </ion-button>
+    </ion-list>
+  </form>
+</div>
+</ion-content>

@@ -1,0 +1,46 @@
+<ion-content [fullscreen]="true" class = "ion-padding">
+  <ion-text color="light" size="large">
+    <h1>INGRESA TUS DATOS</h1>
+    <p>REGISTRO BIBLIOTECARIO</p>
+  </ion-text>
+</ion-content>
+
+<ion-content>
+  <div clase="formulario">
+  <form (ngSubmit)="onSubmit(asd.value)" #asd="ngForm">
+
+    <ion-list>
+      <ion-item color="dark">
+        <ion-label stacked>Nombre</ion-label>
+        <ion-input type="text" expand="full" ngModel name="nombre" ></ion-input>
+      </ion-item>
+      
+      <ion-item color="dark">
+        <ion-label stacked>Apellido</ion-label>
+        <ion-input type="text" expand="full" ngModel name="apellido" ></ion-input>
+      </ion-item>
+
+      <ion-item color="dark">
+        <ion-label stacked>Email</ion-label>
+        <ion-input type="email" expand="full" ngModel name="email" ></ion-input>
+      </ion-item>
+    
+      <ion-item color="dark">
+        <ion-label stacked>Contraseña</ion-label>
+        <ion-input  type="password" ngModel name="password" ></ion-input>
+      </ion-item>
+      
+      <ion-item color="dark">
+        <ion-label stacked>Edad</ion-label>
+        <ion-input  type="number" ngModel name="edad" ></ion-input>
+      </ion-item>
+
+      <ion-button expand="full" size="large" color="danger" type="submit" routerLink="/menu-bibliotecario">
+        REGISTRARSE
+      </ion-button>
+    
+    </ion-list>
+
+</form>
+</div>
+</ion-content>

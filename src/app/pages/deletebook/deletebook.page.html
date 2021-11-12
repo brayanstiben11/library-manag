@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <h2 style="text-align:center">
+      DEVUELVE TU LIBRO
+    </h2>
+  </ion-toolbar>
+</ion-header>
+<ion-content color="dark">
+  <h1 style="text-align:center">PARA ELIMINAR UN LIBRO:</h1>
+  <p>DEBES INGRESAR EL CODIGO ISBN DEL LIBRO</p>
+  <div class="formulario">
+  <form (ngSubmit)="on3Submit(asd.value)" #asd="ngForm">
+
+    <ion-list >
+      <ion-item color="danger">
+        <ion-label position ="floating" stacked>Codigo ISBN del libro</ion-label>
+        <ion-input content-type="text" expand="full" ngModel name="cisbn" ></ion-input>
+      </ion-item>
+      
+      <ion-button expand="full" size="large" routerLink="/menu-bibliotecario" color="success" type="submit" >
+        ELIMINAR LIBRO
+      </ion-button>
+    </ion-list>
+  </form>
+</div>
+</ion-content>
